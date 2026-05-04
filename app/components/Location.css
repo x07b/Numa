@@ -1,0 +1,157 @@
+.location-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #f5f3f0 0%, #faf9f7 100%);
+}
+
+.location-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.location-info h2 {
+  margin-bottom: 0;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.info-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.info-item h4 {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.info-item p {
+  color: var(--color-gray-dark);
+  line-height: 1.7;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.info-item a {
+  color: var(--color-accent);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: #b39368;
+  text-decoration: underline;
+}
+
+.btn-contact {
+  align-self: flex-start;
+  padding: 1rem 2rem;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.btn-contact:hover {
+  background-color: #b39368;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(196, 165, 123, 0.3);
+}
+
+.location-map {
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.location-map iframe {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .location-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .location-map {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-section {
+    padding: 4rem 2rem;
+  }
+
+  .info-item {
+    gap: 1.2rem;
+  }
+
+  .info-icon {
+    font-size: 1.75rem;
+  }
+
+  .info-item h4 {
+    font-size: 1rem;
+  }
+
+  .info-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .location-info {
+    gap: 1.5rem;
+  }
+
+  .info-block {
+    gap: 1.5rem;
+  }
+
+  .info-item {
+    gap: 1rem;
+  }
+
+  .info-icon {
+    font-size: 1.5rem;
+  }
+
+  .btn-contact {
+    width: 100%;
+    text-align: center;
+  }
+}
