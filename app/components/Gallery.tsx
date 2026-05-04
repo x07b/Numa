@@ -1,4 +1,5 @@
 import './Gallery.css';
+import SafeImage from './SafeImage';
 
 const galleryImages = [
   {
@@ -55,7 +56,7 @@ export default function Gallery() {
         <div className="gallery-grid">
           {galleryImages.map((item) => (
             <div key={item.id} className="gallery-item fade-in-scale">
-              <img src={item.image} alt={item.alt} />
+              <SafeImage src={item.image} alt={item.alt} />
               <div className="gallery-overlay">
                 <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" strokeWidth="2" fill="none">
                   <circle cx="12" cy="12" r="1"></circle>

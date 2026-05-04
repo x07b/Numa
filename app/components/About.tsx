@@ -1,4 +1,5 @@
 import './About.css';
+import SafeImage from './SafeImage';
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
         <div className="about-content">
           <div className="about-images">
             <div className="about-image-featured fade-in-scale">
-              <img
+              <SafeImage
                 src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&h=500&fit=crop"
                 alt="Nüma brunch experience"
               />
@@ -38,19 +39,19 @@ export default function About() {
 
         <div className="about-images-secondary">
           <div className="about-image-secondary fade-in-scale">
-            <img
+            <SafeImage
               src="https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?w=400&h=400&fit=crop"
               alt="Cozy ambiance"
             />
           </div>
           <div className="about-image-secondary fade-in-scale">
-            <img
+            <SafeImage
               src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop"
               alt="Specialty coffee"
             />
           </div>
           <div className="about-image-secondary fade-in-scale">
-            <img
+            <SafeImage
               src="https://images.unsplash.com/photo-1511633786486-a01980e01a18?w=400&h=400&fit=crop"
               alt="Interior design"
             />

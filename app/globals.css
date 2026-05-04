@@ -9,7 +9,7 @@
 :root {
   --color-bg: #faf9f7;
   --color-text: #2a2a2a;
-  --color-accent: #c4a57b;
+  --color-accent: #1f5c52;
   --color-accent-light: #e8dcc8;
   --color-white: #ffffff;
   --color-gray: #f5f3f0;
@@ -40,6 +40,11 @@ body {
 
 .page-wrapper {
   position: relative;
+}
+
+/* Improve anchor scroll with floating navbar */
+section[id] {
+  scroll-margin-top: 110px;
 }
 
 img {

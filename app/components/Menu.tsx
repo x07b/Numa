@@ -1,4 +1,5 @@
 import './Menu.css';
+import SafeImage from './SafeImage';
 
 const menuItems = [
   {
@@ -45,7 +46,7 @@ export default function Menu() {
           {menuItems.map((item) => (
             <div key={item.id} className="menu-card fade-in-scale">
               <div className="menu-card-image">
-                <img src={item.image} alt={item.name} />
+                <SafeImage src={item.image} alt={item.name} />
                 <div className="menu-card-overlay">
                   <button className="btn-details">Détails</button>
                 </div>

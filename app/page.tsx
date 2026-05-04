@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <div className="page-wrapper">
+    <div className="page-wrapper" id="top">
       <Navigation />
       <Hero />
       <About />
