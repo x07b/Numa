@@ -14,7 +14,9 @@
 }
 
 .why-header h2 {
+  font-size: 2.8rem;
   margin-bottom: 0;
+  font-weight: 400;
 }
 
 .features-grid {
@@ -58,14 +60,29 @@
 }
 
 .feature-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-  display: inline-block;
-  transition: transform 0.3s ease;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  color: var(--color-accent);
+}
+
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--color-accent);
 }
 
 .feature-card:hover .feature-icon {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.15);
+  color: var(--color-soft-gold);
+}
+
+.feature-card:hover .feature-icon svg {
+  stroke: var(--color-soft-gold);
 }
 
 .feature-card h3 {
@@ -81,22 +98,32 @@
   margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .why-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .why-choose-us {
     padding: 4rem 2rem;
   }
 
+  .why-header h2 {
+    font-size: 2rem;
+  }
+
   .features-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
   .feature-card {
     padding: 2rem;
-  }
-
-  .feature-icon {
-    font-size: 2.5rem;
   }
 }
 

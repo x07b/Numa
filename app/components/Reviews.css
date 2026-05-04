@@ -14,7 +14,9 @@
 }
 
 .reviews-header h2 {
+  font-size: 2.8rem;
   margin-bottom: 0;
+  font-weight: 400;
 }
 
 .reviews-grid {
@@ -92,13 +94,27 @@
   font-weight: 600;
 }
 
+@media (max-width: 1024px) {
+  .reviews-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .reviews-section {
     padding: 4rem 2rem;
   }
 
+  .reviews-header h2 {
+    font-size: 2rem;
+  }
+
   .reviews-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
