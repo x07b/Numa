@@ -15,6 +15,13 @@
   --color-gray: #f5f3f0;
   --color-gray-dark: #8b8b8b;
 
+  /* Luxury accent colors */
+  --color-olive: #556b2f;
+  --color-terracotta: #d97662;
+  --color-bronze: #8b6914;
+  --color-deep-brown: #3e3226;
+  --color-soft-gold: #d4a574;
+
   --font-primary: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
 }
@@ -29,6 +36,10 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+.page-wrapper {
+  position: relative;
 }
 
 img {
@@ -55,20 +66,30 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: var(--font-serif);
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 400;
+  letter-spacing: -0.5px;
 }
 
 h2 {
   font-family: var(--font-serif);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  letter-spacing: -0.5px;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.25px;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 p {
@@ -107,6 +128,24 @@ p {
   }
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes softGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(196, 165, 123, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(196, 165, 123, 0.4);
+  }
+}
+
 .fade-in {
   animation: fadeIn 0.8s ease-in;
 }
@@ -117,4 +156,8 @@ p {
 
 .fade-in-scale {
   animation: fadeInScale 0.6s ease-out;
+}
+
+.soft-glow {
+  animation: softGlow 3s ease-in-out infinite;
 }
