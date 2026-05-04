@@ -46,20 +46,22 @@
 }
 
 .about-image-large {
-  border-radius: 2px;
+  border-radius: 16px;
   overflow: hidden;
   height: 400px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  position: relative;
 }
 
 .about-image-large img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-image-large:hover img {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .about-images-small {
@@ -69,20 +71,22 @@
 }
 
 .about-image-small {
-  border-radius: 2px;
+  border-radius: 12px;
   overflow: hidden;
   height: 250px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .about-image-small img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-image-small:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 @media (max-width: 1024px) {

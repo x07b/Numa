@@ -31,6 +31,9 @@
   overflow: hidden;
   background-color: var(--color-gray);
   cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-item img {
@@ -40,20 +43,26 @@
   transition: transform 0.5s ease;
 }
 
+.gallery-item:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+}
+
 .gallery-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(196, 165, 123, 0.85);
+  background: linear-gradient(135deg, rgba(85, 107, 47, 0.8) 0%, rgba(196, 165, 123, 0.8) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
   color: var(--color-white);
+  backdrop-filter: blur(2px);
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -78,9 +87,11 @@
 
 .gallery-follow {
   text-align: center;
-  padding: 3rem;
-  background: linear-gradient(135deg, #f5f3f0 0%, #faf9f7 100%);
-  border-radius: 2px;
+  padding: 4rem 3rem;
+  background: linear-gradient(135deg, rgba(245, 243, 240, 0.8) 0%, rgba(250, 249, 247, 0.9) 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
 }
 
 .gallery-follow p {
