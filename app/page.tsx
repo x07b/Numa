@@ -1,6 +1,3 @@
-'use client';
-
-import { useState } from 'react';
 import Hero from './components/Hero';
 import Navigation from './components/Navigation';
 import About from './components/About';
